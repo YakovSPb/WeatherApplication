@@ -4,24 +4,34 @@
 	<meta charset="UTF-8">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
-	<title>Vanilla Weather</title>
+	<title>Vanilla Calculate</title>
 </head>
 <body>
-		<div class="wrapper">
-	<div class="location">
-		<h1 class="location-timezone">Timezone</h1>
-		<canvas class="icon	" width="128" height="128"></canvas>
-	</div>
-	<div class="temperature-section">
-		<div class="degree-section">
-			<h2 class="temperature-degree">34</h2>
-			<span>F</span>
-		</div>
-		<div class="temperature-description">Its friggin cold</div>
-	</div>
-		</div>
 
-	<script src="skycons.js"></script>
+	<div class="container">
+		<div class="item input"><form name="form"><input type="text" name="textview" 	 readonly></form></div>
+		<div class="item clean" onclick="clean()">C</div>
+		<div class="item back" onclick="back()">&larr;</div>
+		<div class="item" onclick="insert('+')">+</div>
+		<div class="item" onclick="insert('-')">-</div>
+		<div class="item" onclick="insert('*')">&times;</div>
+		<div class="item" onclick="insert('/')">&divide;</div>
+		<div class="item" onclick="insert('7')">7</div>
+		<div class="item" onclick="insert('8')">8</div>
+		<div class="item" onclick="insert('9')">9</div>
+		<div class="item" onclick="insert('(')">(</div>
+		<div class="item" onclick="insert('4')">4</div>
+		<div class="item" onclick="insert('5')">5</div>
+		<div class="item" onclick="insert('6')">6</div>
+		<div class="item" onclick="insert(')')">)</div>
+		<div class="item" onclick="insert('1')">1</div>
+		<div class="item" onclick="insert('2')">2</div>
+		<div class="item" onclick="insert('3')">3</div>
+		<div class="item equal" onclick="equal()">=</div>
+		<div class="item zero" onclick="insert('0')">0</div>
+		<div class="item" onclick="insert('.')">.</div>
+	</div>
+
 
 	<script src="app.js"></script>
 
